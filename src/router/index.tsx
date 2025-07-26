@@ -8,7 +8,7 @@ export const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/fetchtable",
+    path: "/ability",
     element: <TablePages />,
   },
   {
