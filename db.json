@@ -1,0 +1,49 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "nama": "Panci Besi",
+      "harga": 10000,
+      "stock": 10,
+      "diskon": 7000,
+      "images": "https://logamjawa.id/wp-content/uploads/Panci-Kenyonabe-Single-Handle-Pink.jpg",
+      "deskripsi": "Ini panci mantep dah"
+    },
+    {
+      "id": "2",
+      "nama": "Test",
+      "harga": 1,
+      "stock": 1,
+      "diskon": 1,
+      "images": "https://cdn.ruparupa.io/fit-in/400x400/filters:format(webp)/filters:quality(90)/ruparupa-com/image/upload/Products/10470081_1.jpg",
+      "deskripsi": "test"
+    },
+    {
+      "id": "3",
+      "nama": "Test",
+      "harga": 123,
+      "stock": 1,
+      "diskon": 11,
+      "images": "https://cdn.ruparupa.io/fit-in/400x400/filters:format(webp)/filters:quality(90)/ruparupa-com/image/upload/Products/10470081_1.jpg",
+      "deskripsi": "12"
+    },
+    {
+      "id": "4",
+      "nama": "Te",
+      "harga": 12,
+      "stock": 12,
+      "diskon": 21,
+      "images": "https://cdn.ruparupa.io/fit-in/400x400/filters:format(webp)/filters:quality(90)/ruparupa-com/image/upload/Products/10470081_1.jpg",
+      "deskripsi": "dasdas"
+    },
+    {
+      "nama": "Testdasda",
+      "harga": 123,
+      "stock": 312,
+      "diskon": 213,
+      "images": "https://cdn.ruparupa.io/fit-in/400x400/filters:format(webp)/filters:quality(90)/ruparupa-com/image/upload/Products/10470081_1.jpg",
+      "deskripsi": "fasfadsd",
+      "id": "9b93"
+    }
+  ]
+}
