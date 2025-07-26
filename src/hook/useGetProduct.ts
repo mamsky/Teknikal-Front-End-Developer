@@ -33,13 +33,14 @@ export const useGetProduct = () => {
     }
   }, [data, queryData, search]);
 
-  useEffect(() => {
-    if (sortData == "termahal") {
-      setData(data?.sort((a, b) => Number(b.harga) - Number(a.harga)));
-    } else if (sortData == "termurah") {
-      setData(data?.sort((a, b) => Number(a.harga) - Number(b.harga)));
-    }
-  }, [data, sortData, queryData]);
+  // err bug
+  // useEffect(() => {
+  //   if (sortData == "termahal") {
+  //     setData(data?.sort((a, b) => Number(b.harga) - Number(a.harga)));
+  //   } else if (sortData == "termurah") {
+  //     setData(data?.sort((a, b) => Number(a.harga) - Number(b.harga)));
+  //   }
+  // }, [data, sortData, queryData]);
 
   return { debounced, data, isPending, setSortData };
 };

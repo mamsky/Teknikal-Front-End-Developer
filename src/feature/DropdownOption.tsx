@@ -10,7 +10,7 @@ import EditProduct from "./EditProduct";
 const DropdownOption = ({ data }: { data: ProductDTO }) => {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="px-2 bg-white/30 cursor-pointer rounded-xl">
+      <DropdownMenuTrigger className="px-2 bg-white/30 cursor-pointer rounded-xl font-bold">
         :
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-white">

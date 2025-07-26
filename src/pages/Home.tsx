@@ -21,7 +21,7 @@ const Home = () => {
         />
       </div>
       <SortOption />
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {isPending && <ProductSkeleton />}
         {data?.length == 0 ? (
           <h1>Data Not Found</h1>

@@ -27,6 +27,9 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader />
+      <div className="text-center font-bold text-2xl">
+        Live <strong className="text-blue-500">Code</strong>
+      </div>
       <SidebarContent>
         {items.map((item) => (
           <SidebarMenuItem key={item.title}>
