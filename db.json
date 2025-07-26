@@ -1,49 +1,22 @@
 {
   "product": [
     {
-      "id": "1",
-      "nama": "Panci Besi",
-      "harga": 10000,
+      "id": "a4e1",
+      "nama": "Camera",
+      "harga": 100000,
       "stock": 10,
-      "diskon": 7000,
-      "images": "https://logamjawa.id/wp-content/uploads/Panci-Kenyonabe-Single-Handle-Pink.jpg",
-      "deskripsi": "Ini panci mantep dah"
+      "diskon": 90000,
+      "images": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg",
+      "deskripsi": "Kamera bagus loh"
     },
     {
-      "id": "2",
-      "nama": "Test",
-      "harga": 1,
-      "stock": 1,
-      "diskon": 1,
-      "images": "https://cdn.ruparupa.io/fit-in/400x400/filters:format(webp)/filters:quality(90)/ruparupa-com/image/upload/Products/10470081_1.jpg",
-      "deskripsi": "test"
-    },
-    {
-      "id": "3",
-      "nama": "Test",
-      "harga": 123,
-      "stock": 1,
-      "diskon": 11,
-      "images": "https://cdn.ruparupa.io/fit-in/400x400/filters:format(webp)/filters:quality(90)/ruparupa-com/image/upload/Products/10470081_1.jpg",
-      "deskripsi": "12"
-    },
-    {
-      "id": "4",
-      "nama": "Te",
-      "harga": 12,
-      "stock": 12,
-      "diskon": 21,
-      "images": "https://cdn.ruparupa.io/fit-in/400x400/filters:format(webp)/filters:quality(90)/ruparupa-com/image/upload/Products/10470081_1.jpg",
-      "deskripsi": "dasdas"
-    },
-    {
-      "nama": "Testdasda",
-      "harga": 123,
-      "stock": 312,
-      "diskon": 213,
-      "images": "https://cdn.ruparupa.io/fit-in/400x400/filters:format(webp)/filters:quality(90)/ruparupa-com/image/upload/Products/10470081_1.jpg",
-      "deskripsi": "fasfadsd",
-      "id": "9b93"
+      "id": "b451",
+      "nama": "Headset",
+      "harga": 120000,
+      "stock": 10,
+      "diskon": 100000,
+      "images": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "deskripsi": "Mantep nih Headset"
     }
   ]
 }

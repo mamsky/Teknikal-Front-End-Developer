@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import { Toaster } from "react-hot-toast";
 import App from "./App.tsx";
 import "./index.css";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const queryClient = new QueryClient();
 
@@ -13,5 +14,6 @@ createRoot(document.getElementById("root")!).render(
       <App />
       <Toaster position="top-center" reverseOrder={false} />
     </StrictMode>
+    <ReactQueryDevtools initialIsOpen={false} />
   </QueryClientProvider>
 );

@@ -1,18 +1,15 @@
 import EffectPages from "@/pages/Effect";
 import Home from "@/pages/Home";
+import SidebarLayout from "@/pages/layout/SidebarLayout";
 import TablePages from "@/pages/TablePages";
 import { createBrowserRouter } from "react-router-dom";
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/ability",
-    element: <TablePages />,
-  },
-  {
-    path: "/effect",
-    element: <EffectPages />,
+    Component: SidebarLayout,
+    children: [
+      { path: "/", Component: Home },
+      { path: "/ability", Component: TablePages },
+      { path: "/effect", Component: EffectPages },
+    ],
   },
 ]);

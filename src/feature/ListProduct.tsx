@@ -17,7 +17,7 @@ const ListProduct = ({ data }: { data: ProductDTO }) => {
       />
       <h1 className="font-bold">{data.nama}</h1>
       <p>
-        <s className="text-red-500">{data.diskon} </s> {data.harga}
+        <s className="text-red-500 mr-2">{data.harga} </s> {data.diskon}
       </p>
       <small>
         {data.deskripsi.length >= 20

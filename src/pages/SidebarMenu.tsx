@@ -17,7 +17,7 @@ const items = [
   },
 ];
 
-export function AppSidebar() {
+export function SidebarMenuLayout() {
   return (
     <Sidebar>
       <SidebarContent>

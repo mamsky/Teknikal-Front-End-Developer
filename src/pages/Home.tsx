@@ -9,7 +9,7 @@ const Home = () => {
   const { data, debounced, isPending } = useGetProduct();
   useEffect(() => {}, []);
   return (
-    <div className="w-full h-screen p-4">
+    <div className="p-2 w-full">
       <CreateProduct />
       <div className="flex flex-col my-2">
         <label htmlFor="search">Search</label>
@@ -21,7 +21,7 @@ const Home = () => {
         />
       </div>
       <SortOption />
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
         {isPending && <ProductSkeleton />}
         {data?.length == 0 ? (
           <h1>Data Not Found</h1>

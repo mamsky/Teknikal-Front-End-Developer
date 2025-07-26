@@ -10,7 +10,7 @@ const SortOption = () => {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="px-2 cursor-pointer rounded-xl">
+      <DropdownMenuTrigger className="px-2 cursor-pointer rounded-xl border bg-gray-300 my-4">
         Filter Data
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-white">
