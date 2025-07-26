@@ -10,15 +10,7 @@ export type ProductDTO = {
 };
 
 export const ZodProductDTO = z.object({
-  nama: z
-    .string()
-    .min(1, "Exercise name is required")
-    .transform((str) => {
-      if (str.length === 0) {
-        return str;
-      }
-      return str.charAt(0).toUpperCase() + str.slice(1);
-    }),
+  nama: z.string().min(1, "Exercise name is required").normalize(),
   harga: z.number().min(1, "Harga required"),
   stock: z.number().positive("Calories burned must be a positive number"),
   diskon: z.number().positive("Calories burned must be a positive number"),

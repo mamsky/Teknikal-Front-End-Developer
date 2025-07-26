@@ -17,8 +17,18 @@ const ListProduct = ({ data }: { data: ProductDTO }) => {
       />
       <h1 className="font-bold">{data.nama}</h1>
       <p>
-        <s className="text-red-500 mr-2">{data.harga} </s> {data.diskon}
+        <s className="text-red-500 mr-2">
+          {data.harga.toLocaleString("id-ID", {
+            style: "currency",
+            currency: "IDR",
+          })}{" "}
+        </s>{" "}
+        {data.diskon.toLocaleString("id-ID", {
+          style: "currency",
+          currency: "IDR",
+        })}
       </p>
+      <p>Stock: {data.stock}</p>
       <small>
         {data.deskripsi.length >= 20
           ? `${data.deskripsi.slice(0, 50)}...`

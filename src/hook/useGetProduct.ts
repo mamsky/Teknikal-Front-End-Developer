@@ -23,16 +23,6 @@ export const useGetProduct = () => {
   });
 
   useEffect(() => {
-    if (sortData == "termahal") {
-      const sortHarga = data?.sort((a, b) => b.harga - a.harga);
-      setData(sortHarga);
-    } else if (sortData == "termurah") {
-      const sortHarga = data?.sort((a, b) => a.harga - b.harga);
-      setData(sortHarga);
-    }
-  }, [data, sortData, queryData]);
-
-  useEffect(() => {
     if (search) {
       const filterData = data?.filter((d) =>
         d.nama.toLowerCase().includes(search)
@@ -42,6 +32,14 @@ export const useGetProduct = () => {
       setData(queryData);
     }
   }, [data, queryData, search]);
+
+  useEffect(() => {
+    if (sortData == "termahal") {
+      setData(data?.sort((a, b) => Number(b.harga) - Number(a.harga)));
+    } else if (sortData == "termurah") {
+      setData(data?.sort((a, b) => Number(a.harga) - Number(b.harga)));
+    }
+  }, [data, sortData, queryData]);
 
   return { debounced, data, isPending, setSortData };
 };
