@@ -48,7 +48,7 @@ export const useCreateProduct = () => {
   });
 
   const onSubmit = async (data: ZodProductDTOS) => {
-    if (dataNama?.includes(data.nama)) {
+    if (dataNama?.includes(data.nama.toLowerCase())) {
       return toast.error("Nama Tidak Boleh Sama");
     } else {
       await mutateAsync(data);

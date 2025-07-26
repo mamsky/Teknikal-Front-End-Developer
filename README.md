@@ -5,6 +5,7 @@
 | ReactJs              | Library Front-End                   |
 | TypeScript           | Bahasa JavaScript bertipe statis    |
 | Tailwind CSS         | CSS utility-first untuk styling     |
+| ShadCn               | UI Components                       |
 | React Hook Form      | Form management dan validasi        |
 | Zod                  | Validasi skema data                 |
 | TanStack React Query | Manajemen query dan caching data    |

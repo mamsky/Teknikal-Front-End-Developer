@@ -9,9 +9,11 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios, { isAxiosError } from "axios";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import { useGetProduct } from "./useGetProduct";
 
 export const useEditProduct = (id: string, data: ProductDTO) => {
   const queryClient = useQueryClient();
+  const { data: getData } = useGetProduct();
   const {
     register,
     handleSubmit,
@@ -56,8 +58,16 @@ export const useEditProduct = (id: string, data: ProductDTO) => {
     },
   });
 
+  const dataNama = getData?.map((d) => {
+    return d.nama.toLowerCase();
+  });
+
   const onSubmit = async (data: ZodProductDTOS) => {
-    await mutateAsync(data);
+    if (dataNama?.includes(data.nama.toLowerCase())) {
+      return toast.error("Nama Tidak Boleh Sama");
+    } else {
+      await mutateAsync(data);
+    }
   };
 
   return { register, handleSubmit, errors, onSubmit, isPending };

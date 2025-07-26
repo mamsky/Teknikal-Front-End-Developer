@@ -10,13 +10,22 @@
       "deskripsi": "Kamera bagus loh"
     },
     {
-      "id": "b451",
       "nama": "Headset",
       "harga": 120000,
       "stock": 10,
       "diskon": 100000,
       "images": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "deskripsi": "Mantep nih Headset"
+      "deskripsi": "Mantep nih Headset",
+      "id": "b451"
+    },
+    {
+      "id": "e233",
+      "nama": "Sepatu",
+      "harga": 400000,
+      "stock": 2,
+      "diskon": 350000,
+      "images": "https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/primary/ProductShowcasesampleimages/JPEG/Product+Showcase-1.jpg",
+      "deskripsi": "Mantep gan sepatunya"
     }
   ]
 }

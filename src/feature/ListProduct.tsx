@@ -13,9 +13,10 @@ const ListProduct = ({ data }: { data: ProductDTO }) => {
       <img
         src={data.images}
         alt={data.nama}
-        className="rounded-md max-h-60 bg-cover min-w-full bg-center"
+        className="rounded-md h-46 max-h-46 bg-cover min-w-full bg-center"
       />
-      <h1 className="font-bold">{data.nama}</h1>
+      <h1 className="font-bold">{data.nama} </h1>
+      <small>Stock: {data.stock}</small>
       <p>
         <s className="text-red-500 mr-2">
           {data.harga.toLocaleString("id-ID", {
@@ -28,12 +29,12 @@ const ListProduct = ({ data }: { data: ProductDTO }) => {
           currency: "IDR",
         })}
       </p>
-      <p>Stock: {data.stock}</p>
-      <small>
+
+      <p>
         {data.deskripsi.length >= 20
           ? `${data.deskripsi.slice(0, 50)}...`
           : data.deskripsi}
-      </small>
+      </p>
     </div>
   );
 };
