@@ -26,6 +26,13 @@ npm install
 npm run dev
 ```
 
+### run json-server
+
+```bash
+// open new terminal
+ json-server --watch db.json
+```
+
 ---
 
 ### ✅ **Pages**
